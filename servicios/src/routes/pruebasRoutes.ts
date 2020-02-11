@@ -1,4 +1,5 @@
 import { Router } from 'express';
+import pruebaController from '../controllers/pruebaController';
 
 class PruebasRoutes{
     public router: Router = Router();
@@ -8,7 +9,7 @@ class PruebasRoutes{
     }
 
     config(): void{
-        this.router.get('/', (req,res)=> res.send('Hello_Prueba'));
+        this.router.get('/', pruebaController.prueba);
     }
 }
 

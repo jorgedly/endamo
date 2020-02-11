@@ -43,3 +43,7 @@ para crear un servidor
 npm i @types/express -D
 npm i @types/morgan -D
 npm i @types/cors -D
+
+
+/*para la bd*/
+
