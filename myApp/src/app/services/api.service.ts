@@ -1,4 +1,7 @@
+<<<<<<< Updated upstream
 /*
+=======
+>>>>>>> Stashed changes
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
@@ -85,4 +88,7 @@ export class ApiService {
       )
   }
 }
+<<<<<<< Updated upstream
 */
+=======
+>>>>>>> Stashed changes

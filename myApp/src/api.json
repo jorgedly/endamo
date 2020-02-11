@@ -1,0 +1,29 @@
+{
+    "students": [
+        {
+          "id": 1,
+          "nombre": "Enola Rowe",
+          "contrasenia": "tony@mcu.com"
+        },
+        {
+          "id": 2,
+          "nombre": "Enola Rowe",
+          "contrasenia": "tony@mcu.com"
+        },
+        {
+          "id": 3,
+          "nombre": "Madilyn Pacocha",
+          "contrasenia": "14"
+        },
+        {
+          "id": 4,
+          "nombre": "Harley Cremin",
+          "contrasenia": "17"
+        },
+        {
+          "id": 5,
+          "name": "Juana Ziemann",
+          "contrasenia": "16"
+        }
+    ]
+}

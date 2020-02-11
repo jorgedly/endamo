@@ -1,0 +1,43 @@
+//crear aplicacion del servidor
+npm i express 
+//ir viendo en consola lo que nos estan pidiendo en consola
+npm i morgan
+//modulo para conectar con mysql 
+npm i promise-mysql
+//modulo que conecta 2 servidores
+npm i cors
+
+//instalar typescript 
+npm i -g typescript
+
+//crea un archivo de configuracion de typescript
+$ npm install typescript --save-dev
+
+//luego agregamos en el script to package.json:
+
+"scripts": {
+   ...
+   "tsc": "tsc"
+},
+
+//y luego corremos esto 
+$ npm run tsc -- --init 
+
+//correr tsc build para iniciar el servidor
+
+
+//dependencia de desarrollo
+//npm i nodemon -D
+
+
+//consola para ejecutar lo otro
+npm run build
+npm run dev
+
+
+/*
+para crear un servidor
+*/
+
+//instalar librerias 
+npm i @types/express -D
