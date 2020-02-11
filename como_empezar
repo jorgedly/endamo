@@ -41,3 +41,5 @@ para crear un servidor
 
 //instalar librerias 
 npm i @types/express -D
+npm i @types/morgan -D
+npm i @types/cors -D
