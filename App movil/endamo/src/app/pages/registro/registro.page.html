@@ -64,7 +64,7 @@
                     <ion-button type="submit"
                                 color="dark"
                                 shape="round">
-                        Crear usuario
+                        Crear Usuario
                     </ion-button>
                 </ion-col>
             </ion-row>
@@ -77,9 +77,55 @@
       
       <ion-slide>
 
-          <!-- 
-              formulario para registro de empresas
-           -->
+        <ion-grid fixed>
+  
+        
+            <form (ngSubmit)="registrar_empresa(fRegistroEmpresa)" #fRegistroEmpresa="ngForm">
+                <ion-row>
+                    <ion-col>
+                        
+                        <ion-list>
+                            
+                            <ion-item color="transparent">
+                            <ion-label>Email    </ion-label>
+                            <ion-input  name="email" 
+                                        type="email"
+                                        [(ngModel)] = "registerEmpresa.email"
+                                        required></ion-input>
+                            </ion-item>
+  
+                            <ion-item color="transparent">
+                            <ion-label>Nombre   </ion-label>
+                            <ion-input  name="nombre"
+                                        type="text"
+                                        [(ngModel)] = "registerEmpresa.name"
+                                        required></ion-input>
+                            </ion-item>
+  
+                            <ion-item color="transparent">
+                            <ion-label>Password     </ion-label>
+                            <ion-input  name="password"
+                                        type="password"
+                                        [(ngModel)] = "registerEmpresa.password"
+                                        required></ion-input>
+                            </ion-item>
+  
+                        </ion-list>
+                    </ion-col>
+                </ion-row>
+                
+                <ion-row>
+                <ion-col>
+                    <ion-button type="submit"
+                                color="dark"
+                                shape="round">
+                        Crear Empresa
+                    </ion-button>
+                </ion-col>
+            </ion-row>
+            
+            </form>
+        </ion-grid>
 
       </ion-slide>
 

@@ -69,6 +69,12 @@ export class RegistroPage implements OnInit {
     avatar: '/assets/avatars/av-1.png'
   }
 
+  registerEmpresa = {
+    name: '',
+    email: '',
+    password: ''
+  }
+
   constructor(private activeRoute: ActivatedRoute, 
               private service: ServiceService,
               public toastController: ToastController,
@@ -139,7 +145,20 @@ export class RegistroPage implements OnInit {
     }
   }
 
-  registrar_empresa(){
+  async registrar_empresa(fRegistroEmpresa: NgForm){
+    if(fRegistroEmpresa.invalid)
+      this.presentToast();
+    else
+    {
+      const valido = await this.service.registro_empresa( this.registerEmpresa.name, 
+                                                          this.registerEmpresa.email,
+                                                          this.registerEmpresa.password);
+
+      if(valido)
+        this.route.navigate(['/home-cliente']);
+      else
+        this.presentToast();
+    }
   }
 
   async login(fLogin: NgForm) {

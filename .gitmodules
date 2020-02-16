@@ -1,3 +1,0 @@
-[submodule "servidor"]
-	path = servidor
-	url = https://github.com/jorgedly/endamo-server.git

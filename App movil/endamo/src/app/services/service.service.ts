@@ -64,7 +64,29 @@ export class ServiceService {
     });
   }
 
-  registro_empresa() {
+  registro_empresa(name: string, email: string, password: string) {
+    const datos = {name, email, password};
 
+    return new Promise(resolve => {
+      this.http.post('',datos)
+      .subscribe(resp => {
+        console.log(resp);
+        /*
+          if(registroCorrecto)
+          {
+            //si los datos son correctos, se guarda la informacion en el local storage
+            this.storage.set('token',ID);
+            this.storage.set('isClient', 1 cliente)
+            resolve(true);
+          }
+          else
+          {
+            this.token = null;
+            this.storage.clear();
+            resolve(false);
+          }
+        */
+      });
+    });
   } 
 }
