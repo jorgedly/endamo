@@ -76,7 +76,7 @@ export class ServiceService {
           {
             //si los datos son correctos, se guarda la informacion en el local storage
             this.storage.set('token',ID);
-            this.storage.set('isClient', 1 cliente)
+            this.storage.set('isEmpresa', 1 empresa)
             resolve(true);
           }
           else
