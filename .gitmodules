@@ -1,0 +1,9 @@
+[submodule "endamo-database"]
+	path = endamo-database
+	url = https://github.com/jorgedly/endamo-database.git
+[submodule "endamo-client"]
+	path = endamo-client
+	url = https://github.com/jorgedly/endamo-client.git
+[submodule "endamo-server"]
+	path = endamo-server
+	url = https://github.com/jorgedly/endamo-server.git

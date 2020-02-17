@@ -1,7 +1,0 @@
-{
-  "name": "endamo",
-  "integrations": {
-    "cordova": {}
-  },
-  "type": "angular"
-}
